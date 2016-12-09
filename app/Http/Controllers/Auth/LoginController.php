@@ -40,7 +40,6 @@ class LoginController extends Controller
         $this->middleware('guest', ['except' => 'logout']);
     }
 
-    /*
     public function logout(Request $request)
     {
         $this->guard()->logout();
@@ -48,6 +47,5 @@ class LoginController extends Controller
         $request->session()->regenerate();
         return redirect($this->redirectAfterLogout);
     }
-    */
-    
+
 }
